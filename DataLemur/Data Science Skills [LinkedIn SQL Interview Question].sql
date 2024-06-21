@@ -18,14 +18,14 @@ There are no duplicates in the candidates table.
 
 candidates Table:
 
-Column Name	    | Type
+Column Name | Type
 candidate_id	| integer
 skill	        | varchar
 
 
 candidates Example Input:
 
-candidate_id	| skill
+candidate_id	    | skill
 123	            | Python
 123	            | Tableau
 123	            | PostgreSQL
