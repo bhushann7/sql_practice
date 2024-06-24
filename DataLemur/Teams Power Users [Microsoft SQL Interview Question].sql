@@ -6,6 +6,15 @@ GROUP BY sender_id
 ORDER BY 2 DESC
 LIMIT 2
 
+-- Solution 2 Different date time
+`
+SELECT sender_id,COUNT(sender_id) AS total_messages
+FROM messages
+WHERE sent_date::DATE BETWEEN '2022-08-01' AND '2022-08-31'
+GROUP BY sender_id
+ORDER BY 2 DESC
+LIMIT 2
+
 
 /*
 
