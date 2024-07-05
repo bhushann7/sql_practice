@@ -6,6 +6,14 @@ WHERE pl.liked_date IS NULL
 ORDER BY p.page_id
 
 
+-- Approach 2 - Using Except 
+
+SELECT page_id
+FROM pages
+EXCEPT
+SELECT page_id
+FROM page_likes
+
 /*
 
 Assume you're given two tables containing data about Facebook Pages and their respective likes (as in "Like a Facebook Page").
